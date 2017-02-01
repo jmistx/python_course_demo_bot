@@ -2,7 +2,7 @@ import os
 from telegram.ext import Updater, MessageHandler, Filters
 
 TOKEN = os.environ.get('TOKEN', 'TOKEN')
-PORT = os.environ.get('PORT', '5000')
+PORT = int(os.environ.get('PORT', '5000'))
 
 
 def echo(bot, update):
